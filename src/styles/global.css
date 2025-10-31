@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+@theme {  
+    --color-green-500: #60993B ;
+    --color-green-400: #71B445 ;
+    --color-green-600: #4D7B30 }
+
+
+@font-face {
+  font-family: 'Staatliches';
+  src: url('/fonts/Staatliches-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: 'Staatliches';
+    color: #FEFFEA;
+    height: 100%;
+    min-height: 100%;
+  }
+
+  .wrapper {
+    background-color: #0000007b;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80ch;
+    padding: 1rem;
+    line-height: 1.5;
+    backdrop-filter: blur(10px);
+    min-height: 100vh;
+  }
+  a {
+    color:#60993B;
+  }
+
+  p {
+    font-family: sans-serif;
+  }
+
+  .kth{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#60993B;
+  }
+
+  footer {
+    padding: 50px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    margin: 1rem 0;
+    font-size: 2.5rem;
+  }
+  
+  /* nav styles */
+  
+  .nav-links {
+    width: 100%;
+    display: none;
+    margin: 0;
+  }
+  
+  .nav-links a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FEFFEA;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a:focus {
+    background-color: #60993B;
+  }
+  
+  @media screen and (min-width: 636px) {
+    .nav-links {
+      margin-left: 5em;
+      display: block;
+      position: static;
+      width: auto;
+      background: none;
+    }
+  
+    .nav-links a {
+      display: inline-block;
+      padding: 15px 20px;
+    }
+  }
+
+/* nav styles */
+#menu {
+    background-color: #60993B;
+    border: none;
+    color: #FEFFEA;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  .nav-links {
+    width: 100%;
+    display: none;
+    margin: 0;
+  }
+  
+  .nav-links a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FEFFEA;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a:focus{
+    background-color: #60993B;
+  }
+  
+  :has(#menu[aria-expanded="true"]) .nav-links {
+    display: unset;
+  }
+  
+  @media screen and (min-width: 636px) {
+    .nav-links {
+      margin-left: 5em;
+      display: block;
+      position: static;
+      width: auto;
+      background: none;
+    }
+  
+    .nav-links a {
+      display: inline-block;
+      padding: 15px 20px;
+    }
+  
+    #menu {
+      display: none;
+    }
+  }
+.body-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/src/images/bg.png");
+  z-index: -1; /* Make sure the background stays behind other content */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+  footer {
+    gap: 1rem;
+    margin-top: 2rem;
+    max-width: 80ch;
+    
+    background-color:  #61993b;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80ch;
+    padding: 1rem;
+    line-height: 1.5;
+  }
+
+      .img_md{
+        @apply h-auto max-w-lg rounded-lg
+      }

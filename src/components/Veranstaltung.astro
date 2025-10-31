@@ -1,0 +1,36 @@
+---
+const { url, post } = Astro.props;
+---
+
+
+<li id="veranstaltung">
+    <h3><a href={url}>{post.title}</a></h3>
+    <h4>{post.date}</h4>
+    <a href={url}><img class="h-auto max-w-sm rounded-sm" src={post.image.url} width="100%"></a>
+</li>
+
+
+<style>
+   #veranstaltung{
+    float: left;
+    width: 40%;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 10px;
+    backdrop-filter: blur(30px);
+    border-radius: 3px;
+   }
+
+   a {
+    color: cornsilk;
+    text-decoration:none;
+   }
+
+   li {
+    padding-right: 30px;
+   }
+
+   h3 {
+    text-align: center;
+   }
+</style>

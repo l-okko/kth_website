@@ -1,0 +1,20 @@
+---
+import BaseLayout from './BaseLayout.astro';
+const { frontmatter } = Astro.props;
+import { Image } from 'astro:assets';
+---
+
+
+<BaseLayout pageTitle={frontmatter.title}>
+  <div class="md">
+    <style is:global>
+    
+  
+    </style>
+  <p>{frontmatter.date.toString()}</p>
+  <p><em>{frontmatter.description}</em></p>
+  
+  <slot />
+  </div>
+</BaseLayout>
+

@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BlogPost from '../components/Veranstaltung.astro';
+import Veranstaltung from '../components/Veranstaltung.astro';
+const allPosts = Object.values(import.meta.glob('./veranstaltungen/*.md', { eager: true }));
+const pageTitle = "Veranstaltungen";
+---
+
+<BaseLayout>
+  <h2>Veranstaltungen</h2>
+    <ul>
+        {allPosts.map((post: any) => <Veranstaltung url={post.url} post={post.frontmatter} />)}
+    </ul>
+    <br style="clear: left;">
+    <style>
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+    </style>
+</BaseLayout>
