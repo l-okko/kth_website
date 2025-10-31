@@ -62,6 +62,11 @@
     margin: 1rem 0;
     font-size: 2.5rem;
   }
+
+  h2 {
+    font-size: 1.8rem;
+
+  }
   
   /* nav styles */
   
@@ -185,5 +190,8 @@
   }
 
       .img_md{
-        @apply h-auto max-w-lg rounded-lg
+        @apply h-auto max-w-lg rounded-lg;
+        margin: auto;
+        max-width: 60%;
       }
+
