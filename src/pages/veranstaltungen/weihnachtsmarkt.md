@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/MarkdownLayout.astro
 title: 'Weihnachtsmarkt Lippoldsberg'
-date: erstes Adventswochenende
+friendly_date: erstes Adventswochenende
+date: 2025-11-28
 pubDate: 27.10.2025
 description: ''
 author: ''

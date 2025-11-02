@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/MarkdownLayout.astro
 title: 'Lichterfahrt'
-date: "Samstag, 20.Dezember 2025"
+friendly_date: "Samstag, 20.Dezember 2025"
+date: 2025-12-20
 pubDate: 27.10.2025
 description: ''
 author: ''

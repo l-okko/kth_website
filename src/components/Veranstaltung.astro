@@ -4,8 +4,8 @@ const { url, post } = Astro.props;
 
 
 <li id="veranstaltung">
-    <h3><a href={url}>{post.title}</a></h3>
-    <h4>{post.date}</h4>
+    <h2><a href={url}>{post.title}</a></h2>
+    <h4>{post.friendly_date}</h4>
     <a href={url}><img class="h-auto max-w-sm rounded-sm" src={post.image.url} width="100%"></a>
 </li>
 

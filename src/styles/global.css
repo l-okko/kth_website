@@ -14,7 +14,21 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'BillyMoney';
+  src: url('/fonts/BillyMoneyRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
   
   body {
@@ -42,12 +56,13 @@
   }
 
   p {
-    font-family: sans-serif;
+    font-family: Roboto;
   }
 
   .kth{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: BillyMoney;
     color:#60993B;
+    font-size: 5rem;
   }
 
   footer {
