@@ -13,7 +13,7 @@ const { url, post } = Astro.props;
 <style>
    #veranstaltung{
     float: left;
-    width: 40%;
+    width: 80%;
     background-color: rgb(0, 0, 0);
     padding: 10px;
     margin: 10px;
@@ -22,6 +22,13 @@ const { url, post } = Astro.props;
     border-width: 1px;
     border-color: #202020;
    }
+
+   @media screen and (min-width: 636px) {
+   #veranstaltung{
+    width: 40%;
+   }
+    
+  }
 
    a {
     color: cornsilk;

@@ -45,11 +45,12 @@
     background-color: #0000007b;
     margin: 0 auto;
     width: 100%;
-    max-width: 80ch;
+    max-width: 120ch;
     padding: 1rem;
     line-height: 1.5;
     backdrop-filter: blur(10px);
     min-height: 100vh;
+    container-type: inline-size;
   }
   a {
     color:#60993B;
@@ -62,7 +63,7 @@
   .kth{
     font-family: BillyMoney;
     color:#60993B;
-    font-size: 5rem;
+    font-size: 10cqw;
   }
 
   footer {
@@ -75,13 +76,13 @@
   
   h1 {
     margin: 1rem 0;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+  }
+   h2 {
+    font-size: 1.2rem;
   }
 
-  h2 {
-    font-size: 1.8rem;
 
-  }
   
   /* nav styles */
   
@@ -120,6 +121,8 @@
       display: inline-block;
       padding: 15px 20px;
     }
+
+    
   }
 
 /* nav styles */
@@ -177,6 +180,7 @@
       display: none;
     }
   }
+
 .body-bg {
   position: fixed;
   top: 0;
@@ -194,19 +198,17 @@
   footer {
     gap: 1rem;
     margin-top: 2rem;
-    max-width: 80ch;
-    
     background-color:  #61993b;
     margin: 0 auto;
     width: 100%;
-    max-width: 80ch;
+    max-width: 120ch;
     padding: 1rem;
     line-height: 1.5;
   }
 
-      .img_md{
-        @apply h-auto max-w-lg rounded-lg;
-        margin: auto;
-        max-width: 60%;
-      }
+  .img_md{
+    @apply h-auto max-w-lg rounded-lg;
+    margin: auto;
+    max-width: 60%;
+  }
 

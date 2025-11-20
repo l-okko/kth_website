@@ -7,12 +7,9 @@ import { Image } from 'astro:assets';
 
 <BaseLayout pageTitle={frontmatter.title}>
   <div class="md">
-    <style is:global>
-    
-  
-    </style>
-  <p>{frontmatter.date.toString()}</p>
-  <p><em>{frontmatter.description}</em></p>
+
+  <h3>{frontmatter.friendly_date.toString()}</h3>
+  <h3><em>{frontmatter.description}</em></h3>
   
   <slot />
   </div>
