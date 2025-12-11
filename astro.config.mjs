@@ -14,6 +14,9 @@ export default defineConfig({
       domains: ['astro.build'],
       layout: 'constrained'
   },
-  vite: {    plugins: [tailwindcss()],  }
+  vite: {    plugins: [tailwindcss()],  },
+    redirects: {
+    "/veranstaltungen/lichterfahrt": "/veranstaltungen/lichtertour"
+  }
 
 });
